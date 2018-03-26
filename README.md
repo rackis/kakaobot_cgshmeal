@@ -62,6 +62,9 @@ https://www.realvnc.com/en/connect/download/viewer/
 <pre>파이썬 패키지 설치 - 라즈베리파이의 경우 미리 설치되어 있다.
    <code>sudo apt-get install python3 python3-pip python3-venv</code></pre>
    
+<pre>DB Browser for SQLite 패키지 설치
+   <code>sudo apt-get install sqlitebrowser</code></pre>
+   
 <pre>깃 클론
    <code>git clone https://github.com/rackis/kakaobot_cgshmeal /home/pi/Desktop/KAKAO</code> --- 깃 클론 위치(KAKAO)는 변경하여도 상관없다.
    <code>cd /home/pi/Desktop/KAKAO</code> --- 깃 위치로 이동</pre>
