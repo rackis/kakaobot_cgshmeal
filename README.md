@@ -108,6 +108,7 @@ crontab -e
 # 매주 일요일 0시 0분에 crawl.py 실행
 0 0 * * 7 cd ~/Desktop/KAKAO/data/mealdb && /usr/bin/python3 ~/Desktop/KAKAO/cgsh/crawl.py
 ```
+이 SQL파일을 데이터베이스로 가져오기 하여 새로운 테이블 생성.
 
 ### 7. 카카오톡 플러스 친구와 연동
 타게시물들을 참조하도록 하자.
