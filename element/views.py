@@ -256,6 +256,7 @@ def message(request):
             }
         })
 
+# DB에 저장된 자료 내보내기(급식, 시간표, 학사일정 등)
 def data_from_db(responder, today, daystring):
     day_eng = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']
 
