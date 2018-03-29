@@ -1,4 +1,4 @@
-# 카카오톡 자동응답봇 - originally made by SerenityS / modified by rackis / 급식, 학사일정, 학반별 시간표, 날씨, 공지사항
+# 카카오톡 자동응답봇 - originally made by SerenityS / modified by rackis / 급식, 학사일정, 학반별 시간표, 날씨, 공지
 > 이 소스는 MIT라이선스 하에 자유롭게 이용할 수 있습니다.
 
 ### 개발 참고 사이트
@@ -80,9 +80,9 @@ https://www.realvnc.com/en/connect/download/viewer/
 	CFLAGS="-O0"  pip install lxml      -   오래걸려도 기다리기</code></pre>
 
 *아래는 lxml 설치 실패시 적용해보기  --  http://lxml.de/installation.html 참고
-sudo apt-get install python3-lxml -y
+<code>sudo apt-get install python3-lxml -y
 sudo apt-get install libxml2-dev libxslt-dev python-dev -y
-pip install lxml==3.6.0
+pip install lxml==3.6.0</code>
 
 ### 5. 학교 코드 수정
 타학교에서 사용하기 위해선 학교 코드 수정이 필요하다.
@@ -109,6 +109,8 @@ crontab -e
 # 매주 일요일 0시 0분에 crawl.py 실행
 0 0 * * 7 cd ~/Desktop/KAKAO/element && /usr/bin/python3 ~/Desktop/KAKAO/element/crawl.py
 ```
+
+시간표, 학사일정 정보는 element/database/responder.db 에 존재하므로 수정후 사용하도록 함.
 'element/database/maketable.sql' 이 SQL파일을 데이터베이스로 가져오기 하여 새로운 테이블 생성.
 
 ### 7. 카카오톡 플러스 친구와 연동
