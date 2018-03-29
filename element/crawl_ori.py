@@ -16,7 +16,7 @@ meal = ['', '', '', '', '', '', '일요일은 급식이 제공되지 않습니�
 #########
 sccode = 1
 while sccode < 4:
-    # NEIS에서 급식 파싱
+    # NEIS에서 주간 급식 파싱
     url = ('http://stu.' + regioncode + '/sts_sci_md01_001.do?schulCode=' + schulcode + '&schulCrseScCode=4&schulKndScCode=04&schMmealScCode=' + str(sccode))
     try:
         source = urllib.request.urlopen(url, timeout=3)
